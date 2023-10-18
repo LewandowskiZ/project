@@ -58,7 +58,6 @@ public class FlinkTest02 {
         processDS.print("Main>>>>");
         processDS.getSideOutput(outputTag).print("Side>>>>");
 
-
         env.execute();
     }
 }
