@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class WaterSensor {
-
     public String id;
     public Long ts;
     public Double vc;
