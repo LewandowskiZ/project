@@ -8,9 +8,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class WaterSensorWithWindowTime {
+
     private String id;
+
     private String stt;
+
     private String edt;
+
     private Double vc;
+
     private Integer flag;
 }
