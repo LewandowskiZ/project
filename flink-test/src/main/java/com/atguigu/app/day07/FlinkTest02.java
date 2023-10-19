@@ -58,9 +58,12 @@ public class FlinkTest02 {
                     }
                 });
 
+                listState.clear();
                 StringBuilder outPut = new StringBuilder().append(value.getId()).append(":");
                 for (int i = 0; i < Math.min(list.size(), 3); i++) {
+
                     outPut.append(list.get(i)).append(",");
+                    listState.add(list.get(i));
                 }
 
                 return outPut.deleteCharAt(outPut.length() - 1).toString();
