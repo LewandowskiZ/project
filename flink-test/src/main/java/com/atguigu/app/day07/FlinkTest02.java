@@ -48,7 +48,6 @@ public class FlinkTest02 {
                 List<Double> list = new ArrayList<>();
                 Iterator<Double> iterator = listState.get().iterator();
                 while (iterator.hasNext()) {
-
                     list.add(iterator.next());
                 }
 
