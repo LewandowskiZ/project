@@ -50,7 +50,6 @@ public class FlinkTest03 {
             }
         }));
 
-
         //TODO 4.分组开窗增量聚合  10秒窗口大小,5秒滑动步长的窗口
         SingleOutputStreamOperator<Tuple3<String, Double, Integer>> reduceDS = waterSensorDS.map(new MapFunction<WaterSensor, Tuple2<Double, Integer>>() {
                     @Override
